@@ -17,11 +17,11 @@ export const portfolioData: PortfolioData = {
     longDescription:
       "Soy desarrollador Full Stack con enfoque Backend. Capacitado construir APIs escalables, desarrollar aplicaciones web modernas y trabajar con tecnologías Cloud. Tengo experiencia en Node.js, Laravel, .NET, React, bases de datos SQL y AWS. Siempre busco resolver problemas complejos con soluciones simples, eficientes y bien documentadas. Me mantengo en constante aprendizaje para estar al día con las últimas tendencias del desarrollo de software.",
     location: "Colombia",
-    email: "tu.correo@email.com", // ← Cambia esto
-    phone: "+57 000 000 0000", // ← Cambia esto
-    whatsapp: "+57 000 000 0000", // ← Cambia esto
-    website: "https://jhanpolparra.dev", // ← Cambia esto
-    avatar: "/images/avatar.jpg", // ← Agrega tu foto en public/images/
+    email: "tu.correo@email.com", 
+    phone: "+57 000 000 0000", 
+    whatsapp: "+57 000 000 0000",
+    website: "https://jhanpolparra.dev", 
+    avatar: "/images/avatar.jpg", 
     cvUrl: "/cv/HV_Jhanpol_Parra_ADSO.pdf",
     available: true,
   },
@@ -36,18 +36,18 @@ export const portfolioData: PortfolioData = {
     },
     {
       name: "LinkedIn",
-      url: "https://linkedin.com/in/tu-perfil", // ← Cambia esto
+      url: "https://www.linkedin.com/in/jhanpolpb/", 
       icon: "linkedin",
-      username: "tu-perfil",
+      username: "jhanpolpb",
     },
     {
       name: "Email",
-      url: "mailto:tu.correo@email.com", // ← Cambia esto
+      url: "jhanpolparra@gmail.com", 
       icon: "mail",
     },
     {
       name: "WhatsApp",
-      url: "https://wa.me/57000000000", // ← Cambia esto
+      url: "https://wa.me/573204707210", 
       icon: "message-circle",
     },
   ],
