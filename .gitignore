@@ -1,0 +1,17 @@
+# Dependencies
+Portafolio/portfolio-app/node_modules/
+
+# Next.js build output
+Portafolio/portfolio-app/.next/
+Portafolio/portfolio-app/out/
+
+# Environment variables
+Portafolio/portfolio-app/.env
+Portafolio/portfolio-app/.env.local
+Portafolio/portfolio-app/.env.development.local
+Portafolio/portfolio-app/.env.test.local
+Portafolio/portfolio-app/.env.production.local
+
+# OS files
+.DS_Store
+Thumbs.db
