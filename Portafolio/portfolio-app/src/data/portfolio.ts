@@ -271,12 +271,12 @@ export const portfolioData: PortfolioData = {
       icon: "server",
       title: "Desarrollo Backend",
       description:
-        "APIs RESTful robustas y escalables con Node.js, Laravel o .NET. Arquitectura limpia y documentación completa.",
+        "APIs RESTful robustas y escalables con Node.js, .NET. Arquitectura limpia y documentación completa.",
       features: [
-        "APIs REST y GraphQL",
+        "APIs REST y APIs Gateway",
         "Autenticación y autorización",
         "Integración con servicios externos",
-        "Documentación con Swagger/OpenAPI",
+        "Documentación con Swagger/Postamn",
       ],
     },
     {
@@ -284,7 +284,7 @@ export const portfolioData: PortfolioData = {
       icon: "database",
       title: "Diseño de Bases de Datos",
       description:
-        "Modelado, optimización y administración de bases de datos relacionales. MySQL, PostgreSQL y SQL Server.",
+        "Modelado, optimización y administración de bases de datos Relacionales y no Relacionales. MySQL, PostgreSQL, SQL Server y DynamoDB",
       features: [
         "Diseño de esquemas eficientes",
         "Optimización de consultas",
@@ -324,9 +324,9 @@ export const portfolioData: PortfolioData = {
   stats: [
     {
       label: "Años de experiencia",
-      value: "3",
+      value: "2",
       suffix: "+",
-      description: "Desarrollando soluciones backend",
+      description: "Desarrollando soluciones FullStack",
     },
     {
       label: "Proyectos completados",
