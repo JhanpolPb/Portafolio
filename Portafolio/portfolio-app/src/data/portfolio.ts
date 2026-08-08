@@ -17,9 +17,9 @@ export const portfolioData: PortfolioData = {
     longDescription:
       "Soy desarrollador Full Stack con enfoque Backend. Capacitado construir APIs escalables, desarrollar aplicaciones web modernas y trabajar con tecnologías Cloud. Tengo experiencia en Node.js, Laravel, .NET, React, bases de datos SQL y AWS. Siempre busco resolver problemas complejos con soluciones simples, eficientes y bien documentadas. Me mantengo en constante aprendizaje para estar al día con las últimas tendencias del desarrollo de software.",
     location: "Colombia",
-    email: "tu.correo@email.com", 
-    phone: "+57 000 000 0000", 
-    whatsapp: "+57 000 000 0000",
+    email: "jhanpolparra@gmail.com", 
+    phone: "+57 320 470 7210", 
+    whatsapp: "+57 320 470 7210",
     website: "https://jhanpolparra.dev", 
     avatar: "/images/avatar.jpg", 
     cvUrl: "/cv/HV_Jhanpol_Parra_ADSO.pdf",
@@ -42,7 +42,7 @@ export const portfolioData: PortfolioData = {
     },
     {
       name: "Email",
-      url: "jhanpolparra@gmail.com", 
+      url: "mail to: jhanpolparra@gmail.com", 
       icon: "mail",
     },
     {
@@ -58,7 +58,6 @@ export const portfolioData: PortfolioData = {
     { name: "Node.js", icon: "nodejs", category: "backend", color: "#339933" },
     { name: "Express", icon: "express", category: "backend", color: "#000000" },
     { name: "Laravel", icon: "laravel", category: "backend", color: "#FF2D20" },
-    { name: "PHP", icon: "php", category: "backend", color: "#777BB4" },
     { name: ".NET", icon: "dotnet", category: "backend", color: "#512BD4" },
     // Frontend
     { name: "React", icon: "react", category: "frontend", color: "#61DAFB" },
@@ -95,21 +94,31 @@ export const portfolioData: PortfolioData = {
       category: "database",
       color: "#CC2927",
     },
+
+     {
+      name: "DynamoDB",
+      icon: "dynamodb",
+      category: "database",
+      color: "#00f4abff",
+    },
+
     // Cloud
     { name: "AWS", icon: "aws", category: "cloud", color: "#FF9900" },
     { name: "Docker", icon: "docker", category: "cloud", color: "#2496ED" },
+    { name : "cloud", icon: "cloud", category: "cloud", color: "#27ed24ff"},
     // Tools
     { name: "Git", icon: "git", category: "tools", color: "#F05032" },
     { name: "GitHub", icon: "github", category: "tools", color: "#181717" },
+    { name: "Postman", icon: "postman", category: "tools", color: "#ff7700ff"}
   ],
 
   // ── EXPERIENCIA ───────────────────────────────────────────
   experience: [
     {
       id: "exp-1",
-      company: "Tu Empresa Actual", // ← Cambia esto
+      company: "Nua Technology", // ← Cambia esto
       role: "Full Stack Developer",
-      period: "2023 - Presente",
+      period: "2026 - Presente",
       location: "Colombia (Remoto)",
       type: "full-time",
       description:
@@ -120,25 +129,8 @@ export const portfolioData: PortfolioData = {
         "Automatización de procesos con scripts Node.js",
         "Migración de base de datos legacy a PostgreSQL",
       ],
-      technologies: ["Node.js", "Express", "PostgreSQL", "AWS", "Docker"],
+      technologies: ["Node.js", "Express", "DynamoDB", "AWS"],
       current: true,
-    },
-    {
-      id: "exp-2",
-      company: "Empresa Anterior", // ← Cambia esto
-      role: "Backend Developer",
-      period: "2022 - 2023",
-      location: "Colombia",
-      type: "full-time",
-      description:
-        "Desarrollo de APIs y sistemas web usando Laravel y PHP. Integración con pasarelas de pago y sistemas de terceros.",
-      achievements: [
-        "Desarrollo de módulo de pagos con múltiples pasarelas",
-        "Implementación de sistema de autenticación JWT",
-        "Optimización de consultas SQL mejorando performance",
-      ],
-      technologies: ["Laravel", "PHP", "MySQL", "React"],
-      current: false,
     },
   ],
 
@@ -146,13 +138,24 @@ export const portfolioData: PortfolioData = {
   education: [
     {
       id: "edu-1",
-      institution: "Tu Universidad", // ← Cambia esto
-      degree: "Tecnólogo en Desarrollo de Software",
-      field: "Ingeniería de Sistemas",
-      period: "2020 - 2023",
+      institution: "Politecnico GranColombiano", 
+      degree: "Ingeniería de Software",
+      field: "Ingeniería de Software",
+      period: "2023 - 2027",
       location: "Colombia",
       description:
-        "Formación en desarrollo de software, bases de datos, algoritmos y estructuras de datos.",
+        "Formación en desarrollo de software, bases de datos, despliegue y arquitectura de software",
+    },
+
+    {
+      id: "edu-2",
+      institution: "Servicio Nacional de Aprendizaje (SENA)",
+      degree: "Tecnólogo en Analísis y Desarrollo de Software",
+      field: "Tecnólogo en Analísis y Desarrollo de Software",
+      period: "2024 - 2027",
+      location: "Colombia",
+      description:
+        "Formación en analisis y desarrollo de software, bases de datos, algoritmos y estructuras de datos.",
     },
   ],
 
@@ -348,6 +351,6 @@ export const portfolioData: PortfolioData = {
   // ── GITHUB ────────────────────────────────────────────────
   github: {
     username: "JhanpolPb",
-    pinnedRepos: [], // Se obtienen automáticamente de la API
+    pinnedRepos: [], 
   },
 };
