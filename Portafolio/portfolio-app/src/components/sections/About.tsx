@@ -22,12 +22,12 @@ const PILLARS = [
   {
     icon: Network,
     title: "Arquitectura",
-    desc: "Microservicios, REST, patrones de diseño",
+    desc: "Microservicios, Monolitos, Capas - Arquitectura Escalable",
   },
   {
     icon: Database,
     title: "Bases de datos",
-    desc: "MySQL, PostgreSQL, SQL Server — modelado eficiente",
+    desc: "MySQL, PostgreSQL, SQL Server, DynamoDB — modelado eficiente",
   },
   {
     icon: Cloud,
@@ -37,7 +37,7 @@ const PILLARS = [
   {
     icon: Wrench,
     title: "Resolución",
-    desc: "Análisis de problemas y soluciones elegantes",
+    desc: "Análisis de problemas y soluciones eficientes",
   },
   {
     icon: Brain,
