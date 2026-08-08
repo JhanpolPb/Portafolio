@@ -22,7 +22,7 @@ export const portfolioData: PortfolioData = {
     whatsapp: "+57 000 000 0000", // ← Cambia esto
     website: "https://jhanpolparra.dev", // ← Cambia esto
     avatar: "/images/avatar.jpg", // ← Agrega tu foto en public/images/
-    cvUrl: "/cv/HV_Jhanpol_Parra_ADSO.pdf", // ← Agrega tu CV en public/cv/
+    cvUrl: "/images/cv/HV_Jhanpol_Parra_ADSO.pdf",
     available: true,
   },
 
