@@ -177,7 +177,7 @@ export function Contact({ personal, social }: ContactProps) {
                       <input
                         id="email" name="email" type="email" required
                         value={form.email} onChange={handleChange}
-                        placeholder="tu@correo.com"
+                        placeholder="jhanpolparra@gmail.com"
                         className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-white/20 text-sm focus:outline-none focus:border-blue-500/50 transition-all duration-200"
                         aria-required="true"
                       />
