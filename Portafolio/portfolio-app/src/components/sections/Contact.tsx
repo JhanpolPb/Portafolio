@@ -1,7 +1,8 @@
 "use client";
 
-import { useState, FormEvent } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
+import emailjs from "@emailjs/browser";
 import {
   Mail,
   Send,
@@ -39,15 +40,28 @@ export function Contact({ personal, social }: ContactProps) {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const handleSubmit = async (e: FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setFormState("loading");
-    // TODO: integrate EmailJS
-    // await emailjs.send(SERVICE_ID, TEMPLATE_ID, { ...form }, PUBLIC_KEY);
-    setTimeout(() => {
+
+    try {
+      await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        {
+          from_name: form.name,
+          from_email: form.email,
+          message: form.message,
+          to_name: "Jhanpol",
+        },
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+      );
       setFormState("success");
       setForm({ name: "", email: "", message: "" });
-    }, 1500);
+    } catch (error) {
+      console.error("EmailJS error:", error);
+      setFormState("error");
+    }
   };
 
   return (
