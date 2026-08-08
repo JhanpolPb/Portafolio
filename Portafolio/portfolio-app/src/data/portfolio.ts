@@ -144,7 +144,7 @@ export const portfolioData: PortfolioData = {
       period: "2023 - 2027",
       location: "Colombia",
       description:
-        "Formación en desarrollo de software, bases de datos, despliegue y arquitectura de software",
+        "Formación en desarrollo de software, bases de datos, despliegue y arquitectura de software.",
     },
 
     {
