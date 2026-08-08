@@ -56,12 +56,12 @@ export const portfolioData: PortfolioData = {
   technologies: [
     // Backend
     { name: "Node.js", icon: "nodejs", category: "backend", color: "#339933" },
-    { name: "Express", icon: "express", category: "backend", color: "#000000" },
+    { name: "Express", icon: "express", category: "backend", color: "#ffffffff" },
     { name: "Laravel", icon: "laravel", category: "backend", color: "#FF2D20" },
     { name: ".NET", icon: "dotnet", category: "backend", color: "#512BD4" },
     // Frontend
     { name: "React", icon: "react", category: "frontend", color: "#61DAFB" },
-    { name: "Next.js", icon: "nextjs", category: "frontend", color: "#000000" },
+    { name: "Next.js", icon: "nextjs", category: "frontend", color: "#fbfbfbff" },
     {
       name: "Tailwind CSS",
       icon: "tailwind",
@@ -99,16 +99,16 @@ export const portfolioData: PortfolioData = {
       name: "DynamoDB",
       icon: "dynamodb",
       category: "database",
-      color: "#00f4abff",
+      color: "#ffffffff",
     },
 
     // Cloud
-    { name: "AWS", icon: "aws", category: "cloud", color: "#FF9900" },
+    { name: "AWS", icon: "aws", category: "cloud", color: "#818181ff" },
     { name: "Docker", icon: "docker", category: "cloud", color: "#2496ED" },
     { name : "cloud", icon: "cloud", category: "cloud", color: "#27ed24ff"},
     // Tools
     { name: "Git", icon: "git", category: "tools", color: "#F05032" },
-    { name: "GitHub", icon: "github", category: "tools", color: "#181717" },
+    { name: "GitHub", icon: "github", category: "tools", color: "#ffffffff" },
     { name: "Postman", icon: "postman", category: "tools", color: "#ff7700ff"}
   ],
 
