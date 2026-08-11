@@ -80,9 +80,7 @@ export function About({ data }: AboutProps) {
               {data.longDescription}
             </p>
             <p className="text-white/40 leading-relaxed text-sm">
-              Me especializo en el backend pero tengo experiencia sólida en
-              todo el stack. Disfruto el trabajo en equipo, la documentación
-              clara y el código limpio que otros puedan mantener fácilmente.
+             
             </p>
 
             <div className="mt-6 flex flex-wrap gap-2">
