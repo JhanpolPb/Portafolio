@@ -195,30 +195,32 @@ export const portfolioData: PortfolioData = {
 
   // ── PROYECTOS ─────────────────────────────────────────────
   // Para agregar proyectos, copia un objeto y modifica sus valores
-  projects: [
-    {
-      id: "proj-1",
-      name: "API REST E-Commerce",
-      description:
-        "API escalable para plataforma de comercio electrónico con autenticación JWT, manejo de inventario y pasarela de pagos.",
-      longDescription:
-        "Sistema backend completo para una plataforma de e-commerce. Incluye gestión de usuarios, catálogo de productos, carrito de compras, procesamiento de pagos y sistema de notificaciones.",
-      image: "/images/projects/ecommerce-api.png",
-      technologies: ["Node.js", "Express", "PostgreSQL", "Docker", "AWS"],
-      githubUrl: "https://github.com/JhanpolPb",
-      demoUrl: "",
-      status: "completed",
-      featured: true,
-      category: "backend",
-      features: [
-        "Autenticación JWT con refresh tokens",
-        "Gestión de inventario en tiempo real",
-        "Integración con pasarela de pagos",
-        "Documentación con Swagger",
-        "Tests unitarios y de integración",
-      ],
-      year: 2024,
-    },
+ projects: [
+  {
+    id: "proj-1",
+    name: "KicksHub",
+    description:
+      "E-commerce Full Stack de sneakers con autenticación JWT, panel de administración, subida de imágenes a la nube y despliegue en producción.",
+    longDescription:
+      "Plataforma de comercio electrónico especializada en sneakers, construida de principio a fin con Node.js, Express, PostgreSQL y Next.js. Incluye autenticación y autorización por roles, catálogo de productos con imágenes en Cloudinary, carrito de compras persistente, procesamiento de órdenes con historial detallado, y panel de administración completo. Desplegada en producción con backend, frontend y base de datos en la nube.",
+    image: "/images/projects/kickshub.png",
+    technologies: ["Node.js", "Express", "PostgreSQL", "Next.js", "React", "Cloudinary", "Render", "JWT"],
+    githubUrl: "https://github.com/JhanpolPb/kickshub",
+    demoUrl: "https://kickshub-frontend.onrender.com",
+    status: "in-progress",
+    featured: true,
+    category: "fullstack",
+    features: [
+      "Autenticación JWT con roles (cliente / admin)",
+      "Panel de administración con CRUD de productos",
+      "Subida de imágenes a Cloudinary",
+      "Carrito de compras y procesamiento de órdenes",
+      "Diseño responsive con Next.js App Router",
+      "API REST con arquitectura por capas",
+      "Despliegue completo en producción",
+    ],
+    year: 2026,
+  },
     {
       id: "proj-2",
       name: "Sistema de Gestión Empresarial",
