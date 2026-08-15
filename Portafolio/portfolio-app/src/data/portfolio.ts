@@ -175,7 +175,7 @@ export const portfolioData: PortfolioData = {
       issuer: "SENA",
       date: "2022",
       category: "development",
-    },
+    },// Remplar
     {
       id: "cert-3",
       name: "Oracle Database SQL",
