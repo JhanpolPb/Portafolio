@@ -227,7 +227,7 @@ export const portfolioData: PortfolioData = {
       description:
         "En construcción",
       longDescription:
-        "Sistema ERP ligero para PYMEs. Gestión de empleados, nómina, inventario de productos, facturación y reportes en tiempo real.",
+        "En construcción",
       image: "/images/projects/erp-system.png",
       technologies: ["Laravel", "PHP", "MySQL", "React", "Tailwind CSS"],
       githubUrl: "https://github.com/JhanpolPb",
