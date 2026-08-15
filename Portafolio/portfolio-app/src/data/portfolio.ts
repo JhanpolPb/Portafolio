@@ -225,9 +225,9 @@ export const portfolioData: PortfolioData = {
       id: "proj-2",
       name: "En construcción",
       description:
-        "En construcción",
+        "",
       longDescription:
-        "En construcción",
+        "",
       image: "",
       technologies: [],
       githubUrl: "https://github.com/JhanpolPb",
@@ -246,7 +246,7 @@ export const portfolioData: PortfolioData = {
     },
     {
       id: "proj-3",
-      name: "",
+      name: "En construcción",
       description:
         "",
       image: "",
