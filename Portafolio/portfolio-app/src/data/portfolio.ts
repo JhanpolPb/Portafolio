@@ -183,7 +183,7 @@ export const portfolioData: PortfolioData = {
       date: "2023",
       category: "database",
       url: "https://education.oracle.com/",
-    },
+    },//Remplazar
     {
       id: "cert-4",
       name: "Node.js Application Development",
