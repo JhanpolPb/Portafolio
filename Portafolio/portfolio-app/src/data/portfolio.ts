@@ -225,7 +225,7 @@ export const portfolioData: PortfolioData = {
       id: "proj-2",
       name: "En construcción",
       description:
-        "Aplicación web para gestión de recursos humanos, inventario y reportes. Backend con Laravel y frontend con React.",
+        "En construcción",
       longDescription:
         "Sistema ERP ligero para PYMEs. Gestión de empleados, nómina, inventario de productos, facturación y reportes en tiempo real.",
       image: "/images/projects/erp-system.png",
