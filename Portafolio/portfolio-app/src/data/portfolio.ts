@@ -223,7 +223,7 @@ export const portfolioData: PortfolioData = {
   },
     {
       id: "proj-2",
-      name: "Sistema de Gestión Empresarial",
+      name: "En construcción",
       description:
         "Aplicación web para gestión de recursos humanos, inventario y reportes. Backend con Laravel y frontend con React.",
       longDescription:
