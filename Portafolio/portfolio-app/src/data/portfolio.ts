@@ -168,7 +168,7 @@ export const portfolioData: PortfolioData = {
       date: "2024",
       category: "cloud",
       url: "https://aws.amazon.com/certification/",
-    },// Remplar
+    },// Remplazar
     {
       id: "cert-2",
       name: "Desarrollo Web Full Stack",
