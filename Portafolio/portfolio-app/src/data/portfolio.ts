@@ -168,14 +168,14 @@ export const portfolioData: PortfolioData = {
       date: "2024",
       category: "cloud",
       url: "https://aws.amazon.com/certification/",
-    },
+    },// Remplazar
     {
       id: "cert-2",
       name: "Desarrollo Web Full Stack",
       issuer: "SENA",
       date: "2022",
       category: "development",
-    },
+    },// Remplazar
     {
       id: "cert-3",
       name: "Oracle Database SQL",
@@ -183,7 +183,7 @@ export const portfolioData: PortfolioData = {
       date: "2023",
       category: "database",
       url: "https://education.oracle.com/",
-    },
+    },//Remplazar
     {
       id: "cert-4",
       name: "Node.js Application Development",
