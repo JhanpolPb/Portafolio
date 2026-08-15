@@ -203,7 +203,7 @@ export const portfolioData: PortfolioData = {
       "E-commerce Full Stack de sneakers con autenticación JWT, panel de administración, subida de imágenes a la nube y despliegue en producción.",
     longDescription:
       "Plataforma de comercio electrónico especializada en sneakers, construida de principio a fin con Node.js, Express, PostgreSQL y Next.js. Incluye autenticación y autorización por roles, catálogo de productos con imágenes en Cloudinary, carrito de compras persistente, procesamiento de órdenes con historial detallado, y panel de administración completo. Desplegada en producción con backend, frontend y base de datos en la nube.",
-    image: "/images/projects/kickshub.png",
+    image: "",
     technologies: ["Node.js", "Express", "PostgreSQL", "Next.js", "React", "Cloudinary", "Render", "JWT"],
     githubUrl: "https://github.com/JhanpolPb/kickshub",
     demoUrl: "https://kickshub-frontend.onrender.com",
