@@ -207,7 +207,7 @@ export const portfolioData: PortfolioData = {
     technologies: ["Node.js", "Express", "PostgreSQL", "Next.js", "React", "Cloudinary", "Render", "JWT"],
     githubUrl: "https://github.com/JhanpolPb/kickshub",
     demoUrl: "https://kickshub-frontend.onrender.com",
-    status: "in-progress",
+    status: "completed",
     featured: true,
     category: "fullstack",
     features: [
