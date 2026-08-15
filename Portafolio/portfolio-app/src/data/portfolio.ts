@@ -229,7 +229,7 @@ export const portfolioData: PortfolioData = {
       longDescription:
         "En construcción",
       image: "",
-      technologies: ["Laravel", "PHP", "MySQL", "React", "Tailwind CSS"],
+      technologies: [],
       githubUrl: "https://github.com/JhanpolPb",
       demoUrl: "",
       status: "completed",
