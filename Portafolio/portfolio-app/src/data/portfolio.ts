@@ -334,7 +334,7 @@ export const portfolioData: PortfolioData = {
       label: "Proyectos completados",
       value: "15",
       suffix: "+",
-      description: "APIs, sistemas y aplicaciones",
+      description: " Sistemas, aplicaciones y solucionbes escalables",
     },
     {
       label: "Tecnologías dominadas",
