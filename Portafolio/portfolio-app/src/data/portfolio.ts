@@ -338,13 +338,13 @@ export const portfolioData: PortfolioData = {
     },
     {
       label: "Tecnologías dominadas",
-      value: "12",
+      value: "15",
       suffix: "+",
       description: "Backend, frontend y cloud",
     },
     {
       label: "Commits este año",
-      value: "500",
+      value: "1000",
       suffix: "+",
       description: "Código limpio y documentado",
     },
