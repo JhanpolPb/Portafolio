@@ -102,3 +102,5 @@ src/
 - **Radix UI**
 
 ## 👨‍💻Developer
+
+Jhanpol Parra Barreto
