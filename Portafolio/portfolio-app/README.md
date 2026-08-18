@@ -100,3 +100,5 @@ src/
 - **Framer Motion**
 - **Lucide React**
 - **Radix UI**
+
+## 👨‍💻Developer
