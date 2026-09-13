@@ -15,7 +15,7 @@ export const portfolioData: PortfolioData = {
     description:
       "Soy desarrollador Full Stack con enfoque Backend. Capacitado para construir APIs escalables, desarrollar aplicaciones web modernas y trabajar con tecnologías Cloud.",
     longDescription:
-      "Soy desarrollador Full Stack con enfoque Backend. Capacitado construir APIs escalables, desarrollar aplicaciones web modernas y trabajar con tecnologías Cloud. Tengo experiencia en Node.js, Laravel, .NET, React, bases de datos SQL y AWS. Siempre busco resolver problemas complejos con soluciones simples, eficientes y bien documentadas. Me mantengo en constante aprendizaje para estar al día con las últimas tendencias del desarrollo de software.",
+      "Soy desarrollador Full Stack con enfoque Backend y deploy . Capacitado construir APIs escalables, desarrollar aplicaciones web modernas y trabajar con tecnologías Cloud. Tengo experiencia en Node.js, Laravel, .NET, React, bases de datos SQL y AWS. Siempre busco resolver problemas complejos con soluciones simples, eficientes y bien documentadas. Me mantengo en constante aprendizaje para estar al día con las últimas tendencias del desarrollo de software.",
     location: "Colombia",
     email: "jhanpolparra@gmail.com", 
     phone: "+57 320 470 7210", 
