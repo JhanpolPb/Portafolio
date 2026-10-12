@@ -19,7 +19,9 @@ import {
   siMysql,
   siPostgresql,
   siDocker,
-  siGooglecloud,
+  siRender,
+  siCloudinary,
+  siAngular,
   siGit,
   siGithub,
   siPostman,
@@ -33,6 +35,9 @@ const CUSTOM_ICON_URL: Record<string, string> = {
   dynamodb:  "https://cdn.jsdelivr.net/gh/gilbarbara/logos/logos/aws-dynamodb.svg",
   sqlserver: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg",
 };
+
+// Logos oscuros que se pierden sobre el fondo: se muestran en blanco
+const INVERT_ON_DARK = new Set(["aws"]);
 
 // Mapeo de icon key → objeto de Simple Icons (empaquetado, sin CDN)
 const ICONS: Record<string, SimpleIcon> = {
@@ -49,7 +54,9 @@ const ICONS: Record<string, SimpleIcon> = {
   mysql:       siMysql,
   postgresql:  siPostgresql,
   docker:      siDocker,
-  cloud:       siGooglecloud,
+  render:      siRender,
+  cloudinary:  siCloudinary,
+  angular:     siAngular,
   git:         siGit,
   github:      siGithub,
   postman:     siPostman,
@@ -83,7 +90,7 @@ function TechIcon({ icon, color, name }: { icon: string; color?: string; name: s
         alt={name}
         width={32}
         height={32}
-        className="w-8 h-8 object-contain"
+        className={`w-8 h-8 object-contain ${INVERT_ON_DARK.has(icon) ? "brightness-0 invert" : ""}`}
         loading="lazy"
       />
     );
@@ -117,7 +124,7 @@ export function Technologies({ technologies }: TechnologiesProps) {
       : technologies.filter((t) => t.category === activeCategory);
 
   return (
-    <section id="technologies" className="relative py-24" aria-label="Tecnologías">
+    <section id="technologies" className="relative py-16 md:py-20" aria-label="Tecnologías">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-cyan-950/5 to-transparent pointer-events-none" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

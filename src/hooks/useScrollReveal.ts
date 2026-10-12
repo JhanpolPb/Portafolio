@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import { useInView } from "framer-motion";
 
 export function useScrollReveal(threshold = 0.1) {

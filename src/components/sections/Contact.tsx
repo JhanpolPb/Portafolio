@@ -6,9 +6,6 @@ import emailjs from "@emailjs/browser";
 import {
   Mail,
   Send,
-  GitBranch,
-  ExternalLink,
-  MessageCircle,
   MapPin,
   CheckCircle2,
   AlertCircle,
@@ -16,14 +13,8 @@ import {
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { GlassCard } from "@/components/ui/GlassCard";
 import { Button } from "@/components/ui/Button";
+import { SocialIcon } from "@/components/ui/SocialIcon";
 import type { PortfolioData } from "@/types";
-
-const ICON_MAP = {
-  github: GitBranch,
-  linkedin: ExternalLink,
-  mail: Mail,
-  "message-circle": MessageCircle,
-};
 
 interface ContactProps {
   personal: PortfolioData["personal"];
@@ -65,7 +56,7 @@ export function Contact({ personal, social }: ContactProps) {
   };
 
   return (
-    <section id="contact" className="relative py-24" aria-label="Contacto">
+    <section id="contact" className="relative py-16 md:py-20" aria-label="Contacto">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-blue-950/5 to-transparent pointer-events-none" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -107,7 +98,7 @@ export function Contact({ personal, social }: ContactProps) {
                     aria-label="Contactar por WhatsApp"
                   >
                     <div className="p-2 rounded-lg bg-emerald-500/10 border border-emerald-500/20 group-hover:bg-emerald-500/20 transition-colors">
-                      <MessageCircle size={16} className="text-emerald-400" aria-hidden="true" />
+                      <SocialIcon icon="message-circle" size={16} className="text-emerald-400" />
                     </div>
                     <span className="text-sm">{personal.whatsapp}</span>
                   </a>
@@ -126,8 +117,6 @@ export function Contact({ personal, social }: ContactProps) {
               <h3 className="text-white/60 text-sm font-medium mb-4">Encuéntrame en</h3>
               <div className="space-y-2">
                 {social.map((link) => {
-                  const Icon = ICON_MAP[link.icon as keyof typeof ICON_MAP];
-                  if (!Icon) return null;
                   return (
                     <a
                       key={link.name}
@@ -137,7 +126,7 @@ export function Contact({ personal, social }: ContactProps) {
                       aria-label={link.name}
                       className="flex items-center gap-3 px-3 py-2 rounded-xl text-white/50 hover:text-white hover:bg-white/5 transition-all duration-200"
                     >
-                      <Icon size={16} aria-hidden="true" />
+                      <SocialIcon icon={link.icon} size={16} />
                       <span className="text-sm">{link.name}</span>
                       {link.username && (
                         <span className="ml-auto text-xs text-white/30">@{link.username}</span>
@@ -191,7 +180,7 @@ export function Contact({ personal, social }: ContactProps) {
                       <input
                         id="email" name="email" type="email" required
                         value={form.email} onChange={handleChange}
-                        placeholder="jhanpolparra@gmail.com"
+                        placeholder="tu@correo.com"
                         className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-white/20 text-sm focus:outline-none focus:border-blue-500/50 transition-all duration-200"
                         aria-required="true"
                       />

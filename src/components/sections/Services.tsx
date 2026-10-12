@@ -27,7 +27,7 @@ export function Services({ services }: ServicesProps) {
   return (
     <section
       id="services"
-      className="relative py-24"
+      className="relative py-16 md:py-20"
       aria-label="Servicios"
     >
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-violet-950/5 to-transparent pointer-events-none" />

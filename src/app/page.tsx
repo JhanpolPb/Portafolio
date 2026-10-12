@@ -27,7 +27,7 @@ export default async function HomePage() {
     <div className="min-h-screen bg-[#080810]">
       <Navbar name={personal.name} />
 
-      <main>
+      <main className="overflow-x-clip">
         <Hero data={personal} social={social} />
         <About data={personal} />
         <Stats stats={rest.stats} />

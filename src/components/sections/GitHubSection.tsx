@@ -18,7 +18,7 @@ export function GitHubSection({ user, repos, username }: GitHubSectionProps) {
   return (
     <section
       id="github"
-      className="py-24"
+      className="py-16 md:py-20"
       aria-label="Perfil de GitHub"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -15,7 +15,7 @@ export const portfolioData: PortfolioData = {
     description:
       "Soy desarrollador Full Stack con enfoque Backend. Capacitado para construir APIs escalables, desarrollar aplicaciones web modernas y trabajar con tecnologías Cloud.",
     longDescription:
-      "Soy desarrollador Full Stack con enfoque Backend y deploy . Capacitado construir APIs escalables, desarrollar aplicaciones web modernas y trabajar con tecnologías Cloud. Tengo experiencia en Node.js, Laravel, .NET, React, bases de datos SQL y AWS. Siempre busco resolver problemas complejos con soluciones simples, eficientes y bien documentadas. Me mantengo en constante aprendizaje para estar al día con las últimas tendencias del desarrollo de software.",
+      "Soy desarrollador Full Stack con enfoque en Backend y despliegue. Estoy capacitado para construir APIs escalables, desarrollar aplicaciones web modernas y trabajar con tecnologías Cloud. Tengo experiencia en Node.js, Laravel, .NET, React, bases de datos SQL y AWS. Siempre busco resolver problemas complejos con soluciones simples, eficientes y bien documentadas. Me mantengo en constante aprendizaje para estar al día con las últimas tendencias del desarrollo de software.",
     location: "Colombia",
     email: "jhanpolparra@gmail.com", 
     phone: "+57 320 470 7210", 
@@ -42,7 +42,7 @@ export const portfolioData: PortfolioData = {
     },
     {
       name: "Email",
-      url: "mail to: jhanpolparra@gmail.com", 
+      url: "mailto:jhanpolparra@gmail.com",
       icon: "mail",
     },
     {
@@ -80,6 +80,7 @@ export const portfolioData: PortfolioData = {
       category: "frontend",
       color: "#3178C6",
     },
+    { name: "Angular", icon: "angular", category: "frontend", color: "#DD0031" },
     // Bases de datos
     { name: "MySQL", icon: "mysql", category: "database", color: "#4479A1" },
     {
@@ -103,9 +104,10 @@ export const portfolioData: PortfolioData = {
     },
 
     // Cloud
-    { name: "AWS", icon: "aws", category: "cloud", color: "#818181ff" },
+    { name: "AWS", icon: "aws", category: "cloud", color: "#FF9900" },
     { name: "Docker", icon: "docker", category: "cloud", color: "#2496ED" },
-    { name : "cloud", icon: "cloud", category: "cloud", color: "#27ed24ff"},
+    { name: "Render", icon: "render", category: "cloud", color: "#ffffffff" },
+    { name: "Cloudinary", icon: "cloudinary", category: "cloud", color: "#3448C5" },
     // Tools
     { name: "Git", icon: "git", category: "tools", color: "#F05032" },
     { name: "GitHub", icon: "github", category: "tools", color: "#ffffffff" },
@@ -138,7 +140,7 @@ export const portfolioData: PortfolioData = {
   education: [
     {
       id: "edu-1",
-      institution: "Politecnico GranColombiano", 
+      institution: "Politécnico Grancolombiano",
       degree: "Ingeniería de Software",
       field: "Ingeniería de Software",
       period: "2023 - 2027",
@@ -150,12 +152,12 @@ export const portfolioData: PortfolioData = {
     {
       id: "edu-2",
       institution: "Servicio Nacional de Aprendizaje (SENA)",
-      degree: "Tecnólogo en Analísis y Desarrollo de Software",
-      field: "Tecnólogo en Analísis y Desarrollo de Software",
+      degree: "Tecnólogo en Análisis y Desarrollo de Software",
+      field: "Tecnólogo en Análisis y Desarrollo de Software",
       period: "2024 - 2027",
       location: "Colombia",
       description:
-        "Formación en analisis y desarrollo de software, bases de datos, algoritmos y estructuras de datos.",
+        "Formación en análisis y desarrollo de software, bases de datos, algoritmos y estructuras de datos.",
     },
   ],
 
@@ -203,7 +205,7 @@ export const portfolioData: PortfolioData = {
       "E-commerce Full Stack de sneakers con autenticación JWT, panel de administración, subida de imágenes a la nube y despliegue en producción.",
     longDescription:
       "Plataforma de comercio electrónico especializada en sneakers, construida de principio a fin con Node.js, Express, PostgreSQL y Next.js. Incluye autenticación y autorización por roles, catálogo de productos con imágenes en Cloudinary, carrito de compras persistente, procesamiento de órdenes con historial detallado, y panel de administración completo. Desplegada en producción con backend, frontend y base de datos en la nube.",
-    image: "",
+    image: "/images/projects/kickshub.png",
     technologies: ["Node.js", "Express", "PostgreSQL", "Next.js", "React", "Cloudinary", "Render", "JWT"],
     githubUrl: "https://github.com/JhanpolPb/kickshub",
     demoUrl: "https://kickshub-frontend.onrender.com",
@@ -221,49 +223,108 @@ export const portfolioData: PortfolioData = {
     ],
     year: 2026,
   },
-    {
-      id: "proj-2",
-      name: "En construcción",
-      description:
-        "",
-      longDescription:
-        "",
-      image: "",
-      technologies: [],
-      githubUrl: "https://github.com/JhanpolPb",
-      demoUrl: "",
-      status: "completed",
-      featured: true,
-      category: "",
-      features: [
-        "",
-        "",
-        "",
-        "",
-        "",
-      ],
-      year: 2023,
-    },
-    {
-      id: "proj-3",
-      name: "En construcción",
-      description:
-        "",
-      image: "",
-      technologies: [""],
-      githubUrl: "https://github.com/JhanpolPb",
-      demoUrl: "",
-      status: "completed",
-      featured: false,
-      category: "fullstack",
-      features: [
-        "",
-        "",
-        "",
-        "",
-      ],
-      year: 2024,
-    },
+  {
+    id: "proj-2",
+    name: "PetCareApp",
+    description:
+      "Plataforma veterinaria para agendar citas, controlar vacunas y reservar peluquería, con panel de administración y reportes.",
+    image: "/images/projects/petcareapp.png",
+    technologies: ["Node.js", "Express", "React", "PostgreSQL", "Neon", "Render"],
+    githubUrl: "https://github.com/JhanpolPb/petcareapp",
+    demoUrl: "https://petcareapp-sgns.onrender.com",
+    status: "completed",
+    featured: true,
+    category: "fullstack",
+    features: [
+      "Citas veterinarias con horarios disponibles en tiempo real",
+      "Control de vacunas y refuerzos por mascota",
+      "Reserva de baño y peluquería",
+      "Panel de administración con CRUD de usuarios, mascotas, citas y servicios",
+      "Reportes por rango de fechas con gráficas",
+      "Roles validados en el servidor en cada petición",
+    ],
+    year: 2026,
+  },
+  {
+    id: "proj-3",
+    name: "Nexo Diario",
+    description:
+      "Periódico digital de tecnología, educación, turismo y comercio, con buscador, favoritos y panel para administrar noticias.",
+    image: "/images/projects/nexo-diario.png",
+    technologies: ["Angular", "TypeScript", "GitHub Actions", "GitHub Pages"],
+    githubUrl: "https://github.com/JhanpolPb/nexo-diario",
+    demoUrl: "https://jhanpolpb.github.io/nexo-diario/",
+    status: "completed",
+    featured: true,
+    category: "frontend",
+    features: [
+      "Cinco vistas construidas a partir de un diseño en Figma",
+      "Buscador de noticias y filtros por categoría",
+      "Favoritos, botones para compartir y noticias relacionadas",
+      "Panel de administración con CRUD de noticias",
+      "Despliegue automático con GitHub Actions",
+    ],
+    year: 2026,
+  },
+  {
+    id: "proj-4",
+    name: "AuthFlow",
+    description:
+      "Sistema de control de asistencia empresarial (check-in / check-out) con autenticación JWT, roles y panel de administración.",
+    image: "",
+    technologies: ["Node.js", "Express", "React", "MySQL", "JWT"],
+    githubUrl: "https://github.com/JhanpolPb/Authflow",
+    status: "completed",
+    featured: false,
+    category: "fullstack",
+    features: [
+      "Login, registro, refresh token y logout con JWT",
+      "Roles de administrador y empleado",
+      "Registro de entrada y salida con historial",
+      "API REST por capas con validación de datos",
+    ],
+    year: 2026,
+  },
+  {
+    id: "proj-5",
+    name: "InsightPro",
+    description:
+      "Sistema para crear, distribuir y analizar encuestas empresariales mediante códigos QR y reportes en tiempo real.",
+    image: "",
+    technologies: ["Laravel", "PHP", "MySQL", "Bootstrap"],
+    githubUrl: "https://github.com/JhanpolPb/InsightPro",
+    status: "completed",
+    featured: false,
+    category: "fullstack",
+    features: [
+      "Multiempresa con registro independiente por NIT",
+      "Cuatro tipos de pregunta: texto, única, múltiple y escala 1-5",
+      "Códigos QR generados automáticamente para compartir encuestas",
+      "Respuestas anónimas sin iniciar sesión",
+      "Reportes visuales y exportación a CSV",
+    ],
+    year: 2025,
+  },
+  {
+    id: "proj-6",
+    name: "Survivor",
+    description:
+      "Juego estilo Vampire Survivors hecho en Godot 4: oleadas de enemigos, armas automáticas, mejoras al subir de nivel y jefes.",
+    image: "",
+    technologies: ["Godot 4", "GDScript", "GitHub Pages"],
+    githubUrl: "https://github.com/JhanpolPb/survivor-godot",
+    demoUrl: "https://jhanpolpb.github.io/survivor-godot/",
+    status: "completed",
+    featured: false,
+    category: "game",
+    features: [
+      "Tres armas con niveles de mejora",
+      "Oleadas con dificultad creciente y un jefe cada 3 minutos",
+      "Gráficos dibujados por código, sin imágenes",
+      "Exportado para jugarse en el navegador",
+    ],
+    year: 2026,
+  },
   ],
 
   // ── SERVICIOS ─────────────────────────────────────────────
@@ -273,12 +334,12 @@ export const portfolioData: PortfolioData = {
       icon: "server",
       title: "Desarrollo Backend",
       description:
-        "APIs RESTful robustas y escalables con Node.js, .NET. Arquitectura limpia y documentación completa.",
+        "APIs RESTful robustas y escalables con Node.js y .NET. Arquitectura limpia y documentación completa.",
       features: [
-        "APIs REST y APIs Gateway",
+        "APIs REST y API Gateway",
         "Autenticación y autorización",
         "Integración con servicios externos",
-        "Documentación con Swagger/Postamn",
+        "Documentación con Swagger/Postman",
       ],
     },
     {
@@ -286,7 +347,7 @@ export const portfolioData: PortfolioData = {
       icon: "database",
       title: "Diseño de Bases de Datos",
       description:
-        "Modelado, optimización y administración de bases de datos Relacionales y no Relacionales. MySQL, PostgreSQL, SQL Server y DynamoDB",
+        "Modelado, optimización y administración de bases de datos relacionales y no relacionales: MySQL, PostgreSQL, SQL Server y DynamoDB.",
       features: [
         "Diseño de esquemas eficientes",
         "Optimización de consultas",
@@ -325,28 +386,28 @@ export const portfolioData: PortfolioData = {
   // ── ESTADÍSTICAS ──────────────────────────────────────────
   stats: [
     {
-      label: "Años de experiencia",
-      value: "2",
+      label: "Años programando",
+      value: "3",
       suffix: "+",
-      description: "Desarrollando soluciones FullStack",
+      description: "Formación y proyectos desde 2023",
     },
     {
-      label: "Proyectos completados",
-      value: "15",
+      label: "Proyectos publicados",
+      value: "6",
       suffix: "+",
-      description: " Sistemas, aplicaciones y soluciones escalables",
+      description: "Con código abierto en GitHub",
     },
     {
-      label: "Tecnologías dominadas",
-      value: "15",
+      label: "Tecnologías",
+      value: "20",
       suffix: "+",
       description: "Backend, frontend y cloud",
     },
     {
-      label: "Commits este año",
-      value: "1000",
+      label: "Commits en 2026",
+      value: "590",
       suffix: "+",
-      description: "Código limpio y documentado",
+      description: "Contribuciones en GitHub",
     },
   ],
 

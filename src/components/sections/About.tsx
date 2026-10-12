@@ -54,7 +54,7 @@ export function About({ data }: AboutProps) {
   return (
     <section
       id="about"
-      className="relative py-24 overflow-hidden"
+      className="relative py-16 md:py-20 overflow-hidden"
       aria-label="Sobre mí"
     >
       {/* Background gradient */}

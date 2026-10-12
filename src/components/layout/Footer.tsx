@@ -1,15 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowUp, GitBranch, ExternalLink, Mail, MessageCircle } from "lucide-react";
+import { ArrowUp } from "lucide-react";
+import { SocialIcon } from "@/components/ui/SocialIcon";
 import type { SocialLink } from "@/types";
-
-const ICON_MAP = {
-  github: GitBranch,
-  linkedin: ExternalLink,
-  mail: Mail,
-  "message-circle": MessageCircle,
-};
 
 interface FooterProps {
   name: string;
@@ -36,8 +30,6 @@ export function Footer({ name, social }: FooterProps) {
           {/* Links */}
           <nav className="flex items-center gap-4" aria-label="Redes sociales">
             {social.map((link) => {
-              const Icon = ICON_MAP[link.icon as keyof typeof ICON_MAP];
-              if (!Icon) return null;
               return (
                 <a
                   key={link.name}
@@ -47,7 +39,7 @@ export function Footer({ name, social }: FooterProps) {
                   aria-label={link.name}
                   className="p-2 text-white/30 hover:text-white transition-colors"
                 >
-                  <Icon size={18} />
+                  <SocialIcon icon={link.icon} size={18} />
                 </a>
               );
             })}

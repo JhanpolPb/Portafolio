@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { GitBranch, ExternalLink, Star, CheckCircle2, Layers } from "lucide-react";
+import { GitBranch, ExternalLink, Star, CheckCircle2 } from "lucide-react";
 import Image from "next/image";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { GlassCard } from "@/components/ui/GlassCard";
@@ -50,12 +50,17 @@ function ProjectCard({ project, index }: ProjectCardProps) {
               src={project.image}
               alt={`Screenshot del proyecto ${project.name}`}
               fill
-              className="object-cover transition-transform duration-500 group-hover:scale-105"
+              className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             />
           ) : (
-            <div className="absolute inset-0 flex items-center justify-center">
-              <Layers size={40} className="text-white/20" aria-hidden="true" />
+            <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(to_right,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:24px_24px]">
+              <span className="text-3xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-violet-300 transition-transform duration-500 group-hover:scale-105">
+                {project.name}
+              </span>
+              <span className="font-mono text-xs text-white/30">
+                {project.technologies.slice(0, 3).join(" · ")}
+              </span>
             </div>
           )}
 
@@ -152,8 +157,9 @@ function ProjectCard({ project, index }: ProjectCardProps) {
 const FILTERS = [
   { id: "all", label: "Todos" },
   { id: "featured", label: "Destacados" },
-  { id: "backend", label: "Backend" },
   { id: "fullstack", label: "Full Stack" },
+  { id: "frontend", label: "Frontend" },
+  { id: "game", label: "Juegos" },
 ];
 
 interface ProjectsProps {
@@ -170,7 +176,7 @@ export function Projects({ projects }: ProjectsProps) {
   });
 
   return (
-    <section id="projects" className="relative py-24" aria-label="Proyectos">
+    <section id="projects" className="relative py-16 md:py-20" aria-label="Proyectos">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-blue-950/5 to-transparent pointer-events-none" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

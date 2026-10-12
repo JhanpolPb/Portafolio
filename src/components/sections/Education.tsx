@@ -12,7 +12,7 @@ interface EducationProps {
 
 export function Education({ education }: EducationProps) {
   return (
-    <section id="education" className="py-24" aria-label="Educación">
+    <section id="education" className="py-16 md:py-20" aria-label="Educación">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader
           label="Formación"

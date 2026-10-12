@@ -1,17 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowDown, Download, GitBranch, ExternalLink, Mail, MessageCircle } from "lucide-react";
+import { ArrowDown, Download, Mail } from "lucide-react";
 import Image from "next/image";
 import { Button } from "@/components/ui/Button";
+import { SocialIcon } from "@/components/ui/SocialIcon";
 import type { PortfolioData } from "@/types";
-
-const ICON_MAP = {
-  github: GitBranch,
-  linkedin: ExternalLink,
-  mail: Mail,
-  "message-circle": MessageCircle,
-};
 
 interface HeroProps {
   data: PortfolioData["personal"];
@@ -143,8 +137,6 @@ export function Hero({ data, social }: HeroProps) {
               className="flex items-center gap-3"
             >
               {social.map((link) => {
-                const Icon = ICON_MAP[link.icon as keyof typeof ICON_MAP];
-                if (!Icon) return null;
                 return (
                   <a
                     key={link.name}
@@ -154,7 +146,7 @@ export function Hero({ data, social }: HeroProps) {
                     aria-label={link.name}
                     className="p-2.5 rounded-xl bg-white/5 hover:bg-white/10 text-white/50 hover:text-white border border-white/10 hover:border-white/20 transition-all duration-200"
                   >
-                    <Icon size={18} />
+                    <SocialIcon icon={link.icon} size={18} />
                   </a>
                 );
               })}

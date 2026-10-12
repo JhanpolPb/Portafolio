@@ -22,7 +22,7 @@ export function Experience({ experience }: ExperienceProps) {
   return (
     <section
       id="experience"
-      className="relative py-24"
+      className="relative py-16 md:py-20"
       aria-label="Experiencia laboral"
     >
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-violet-950/5 to-transparent pointer-events-none" />
