@@ -162,16 +162,40 @@ export const portfolioData: PortfolioData = {
   ],
 
   // ── CERTIFICACIONES ───────────────────────────────────────
-  // La sección se muestra sola cuando hay al menos una. Formato:
-  // {
-  //   id: "cert-1",
-  //   name: "AWS Cloud Practitioner",
-  //   issuer: "Amazon Web Services",
-  //   date: "2027",
-  //   category: "cloud", // "cloud" | "development" | "database" | "other"
-  //   url: "https://www.credly.com/badges/...", // enlace para verificarla (opcional)
-  // },
-  certifications: [],
+  // La sección se muestra sola cuando hay al menos una.
+  // Cuando obtengas una, quita las // de su bloque y pon el año y el enlace reales.
+  certifications: [
+    // {
+    //   id: "cert-1",
+    //   name: "AWS Cloud Practitioner",
+    //   issuer: "Amazon Web Services",
+    //   date: "2027",
+    //   category: "cloud", // "cloud" | "development" | "database" | "other"
+    //   url: "https://www.credly.com/badges/...", // enlace para verificarla (opcional)
+    // },
+    // {
+    //   id: "cert-2",
+    //   name: "Desarrollo Web Full Stack",
+    //   issuer: "SENA",
+    //   date: "2027",
+    //   category: "development",
+    // },
+    // {
+    //   id: "cert-3",
+    //   name: "Oracle Database SQL",
+    //   issuer: "Oracle",
+    //   date: "2027",
+    //   category: "database",
+    //   url: "https://education.oracle.com/",
+    // },
+    // {
+    //   id: "cert-4",
+    //   name: "Node.js Application Development",
+    //   issuer: "OpenJS Foundation",
+    //   date: "2027",
+    //   category: "development",
+    // },
+  ],
 
   // ── PROYECTOS ─────────────────────────────────────────────
   // Para agregar proyectos, copia un objeto y modifica sus valores
