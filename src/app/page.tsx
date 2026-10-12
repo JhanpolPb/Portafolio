@@ -34,7 +34,9 @@ export default async function HomePage() {
         <Technologies technologies={rest.technologies} />
         <Experience experience={rest.experience} />
         <Education education={rest.education} />
-        <Certifications certifications={rest.certifications} />
+        {rest.certifications.length > 0 && (
+          <Certifications certifications={rest.certifications} />
+        )}
         <Projects projects={rest.projects} />
         <GitHubSection
           user={gitHubUser}
